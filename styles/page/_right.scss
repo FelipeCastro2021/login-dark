@@ -1,0 +1,78 @@
+.login-form {
+  @include flex(center, center);
+}
+
+.login-card {
+  background-color: $bg-card;
+
+  padding: 35px;
+  border-radius: 1rem;
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+
+  box-shadow: $bx-card;
+}
+
+.login-card h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  color: $title-card;
+}
+
+.login-card .fieldset {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.login-card .fieldset label {
+  color: $color-label;
+}
+
+.login-card .fieldset input {
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 1rem;
+
+  background-color: $bg-input;
+  border: none;
+  outline: none;
+}
+
+.login-card .fieldset input::placeholder {
+  color: $color-placeholder;
+}
+
+.login-card #login-btn {
+  width: 100%;
+  padding: 1.4rem 1.6rem;
+  border-radius: 1rem;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  background-color: $title-card;
+  border: none;
+
+  box-shadow: 0 1rem 4rem -1.2rem #00ff8052;
+  letter-spacing: .2rem;
+
+  color: $color-btn-login;
+
+  transition: filter .3s;
+}
+
+.login-card #login-btn:hover {
+  filter: brightness(120%);
+}
+
+@media (max-width: 950px) {
+  .login-card {
+    width: 90%;
+  }
+}

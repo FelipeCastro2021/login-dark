@@ -1,0 +1,34 @@
+.login-demo {
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.login-demo > h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+
+  color: $color-font;
+
+  padding: 1.2rem;
+}
+
+.login-demo img {
+  max-width: 100%;
+  width: 35vw;
+}
+
+@media (max-width: 950px) {
+  .login-demo > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-demo > h1 {
+    display: none;
+  }
+
+  .login-demo img {
+    width: 75vw;
+  }
+}
